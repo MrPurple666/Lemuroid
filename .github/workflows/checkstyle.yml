@@ -33,5 +33,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Lemuroid
-        path: lemuroid-app/build/outputs/apk/freeDynamic/release/*.apk
+        path: lemuroid-app/build/outputs/apk/freeDynamic/debug/*.apk
         if-no-files-found: error
