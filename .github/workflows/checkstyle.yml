@@ -27,7 +27,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Run checkstyle tests
-      run: ./gradlew assembleDebug
+      run: ./gradlew assembleFreeDynamicRelease
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
