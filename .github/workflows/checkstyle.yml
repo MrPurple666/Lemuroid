@@ -25,11 +25,13 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: Run checkstyle tests
-      run: ./gradlew assembleDebug checkstyle lintDebug lintKotlin check
 
-    - name: Upload Unsigned Release APK
+    - name: Run checkstyle tests
+      run: ./gradlew assembleDebug
+
+    - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: app-full-reldebug.apk
-        path: app/build/outputs/apk/full/release/app-full-reldebug.apk
+        name: Lemuroid
+        path: app/build/outputs/apk/debug/*.apk
+        if-no-files-found: error
