@@ -58,3 +58,4 @@ It originated from a rib of [Retrograde](https://github.com/retrograde/retrograd
 
 ### Languages:
 You can help translate Lemuroid in your native language by going here: https://crowdin.com/project/lemuroid
+
