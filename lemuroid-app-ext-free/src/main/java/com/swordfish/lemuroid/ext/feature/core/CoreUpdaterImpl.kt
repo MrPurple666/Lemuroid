@@ -45,10 +45,10 @@ class CoreUpdaterImpl(
 
     // This is the last tagged versions of cores.
     companion object {
-        private const val CORES_VERSION = "1.14"
+        private const val CORES_VERSION = "1.14.5"
     }
 
-    private val baseUri = Uri.parse("https://github.com/Swordfish90/LemuroidCores/")
+    private val baseUri = Uri.parse("https://github.com/MrPurple666/LemuroidCores/")
 
     private val api = retrofit.create(CoreUpdater.CoreManagerApi::class.java)
 
