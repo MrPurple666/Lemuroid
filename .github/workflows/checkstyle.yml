@@ -27,3 +27,9 @@ jobs:
       run: chmod +x gradlew
     - name: Run checkstyle tests
       run: ./gradlew assembleDebug checkstyle lintDebug lintKotlin check
+
+    - name: Upload Unsigned Release APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-full-reldebug.apk
+        path: app/build/outputs/apk/full/release/app-full-release.apk
