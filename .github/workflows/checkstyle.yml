@@ -32,4 +32,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: app-full-reldebug.apk
-        path: app/build/outputs/apk/full/release/app-full-release.apk
+        path: app/build/outputs/apk/full/release/app-full-reldebug.apk
