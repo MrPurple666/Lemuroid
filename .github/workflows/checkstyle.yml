@@ -27,11 +27,11 @@ jobs:
       run: chmod +x gradlew
 
     - name: Run checkstyle tests
-      run: ./gradlew assemblefreeDynamicDebug
+      run: ./gradlew assemblefreeDynamicRelease
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
         name: Lemuroid
-        path: app/build/outputs/apk/debug/*.apk
+        path: lemuroid-app/build/outputs/apk/freeDynamic/release/lemuroid-app-free-dynamic-release-unsigned.apk
         if-no-files-found: error
