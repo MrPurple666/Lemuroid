@@ -607,6 +607,7 @@ data class GameSystem(
                     ),
                 ),
                 uniqueExtensions = listOf("gba"),
+                supportedExtensions = listOf("srl"),
             ),
             GameSystem(
                 SystemID.N64,
@@ -955,6 +956,7 @@ data class GameSystem(
                     )
                 ),
                 uniqueExtensions = listOf("nds"),
+                supportedExtensions = listOf("srl"),
             ),
             GameSystem(
                 SystemID.ATARI7800,
@@ -1211,7 +1213,7 @@ data class GameSystem(
                         supportedOnlyArchitectures = setOf("arm64-v8a")
                     ),
                 ),
-                uniqueExtensions = listOf("3ds"),
+                uniqueExtensions = listOf("3ds", "3dsx", "cci", "cxi"),
             ),
         )
 
