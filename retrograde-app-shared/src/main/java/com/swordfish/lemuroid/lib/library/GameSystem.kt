@@ -734,22 +734,6 @@ data class GameSystem(
                                 ControllerConfigs.PSX_DUALSHOCK
                             ),
                         ),
-                        exposedSettings = listOf(
-                            ExposedSetting(
-                                "pcsx_rearmed_frameskip",
-                                R.string.setting_pcsx_rearmed_frameskip
-                            )
-                        ),
-                        exposedAdvancedSettings = listOf(
-                            ExposedSetting(
-                                "pcsx_rearmed_drc",
-                                R.string.setting_pcsx_rearmed_drc
-                            )
-                        ),
-                        defaultSettings = listOf(
-                            CoreVariable("pcsx_rearmed_drc", "disabled"),
-                            CoreVariable("pcsx_rearmed_duping_enable", "enabled"),
-                        ),
                         rumbleSupported = true,
                         supportsLibretroVFS = true,
                         skipDuplicateFrames = false
