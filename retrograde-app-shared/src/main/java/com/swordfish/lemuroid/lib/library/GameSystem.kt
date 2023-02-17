@@ -485,55 +485,63 @@ data class GameSystem(
                 R.string.game_system_abbr_gbc,
                 listOf(
                     SystemCoreConfig(
-                        CoreID.GAMBATTE,
+                        CoreID.MGBA,
                         exposedSettings = listOf(
                             ExposedSetting(
-                                "gambatte_mix_frames",
-                                R.string.setting_gambatte_mix_frames,
+                                "mgba_solar_sensor_level",
+                                R.string.setting_mgba_solar_sensor_level
+                            ),
+                            ExposedSetting(
+                                "mgba_interframe_blending",
+                                R.string.setting_mgba_interframe_blending,
                                 arrayListOf(
                                     ExposedSetting.Value(
-                                        "disabled",
-                                        R.string.value_gambatte_mix_frames_disabled
+                                        "OFF",
+                                        R.string.value_mgba_interframe_blending_off
                                     ),
                                     ExposedSetting.Value(
                                         "mix",
-                                        R.string.value_gambatte_mix_frames_mix
+                                        R.string.value_mgba_interframe_blending_mix
                                     ),
                                     ExposedSetting.Value(
                                         "lcd_ghosting",
-                                        R.string.value_gambatte_mix_frames_lcd_ghosting
+                                        R.string.value_mgba_interframe_blending_lcd_gho>
                                     ),
                                     ExposedSetting.Value(
                                         "lcd_ghosting_fast",
-                                        R.string.value_gambatte_mix_frames_lcd_ghosting_fast
+                                        R.string.value_mgba_interframe_blending_lcd_gho>
                                     ),
                                 )
                             ),
                             ExposedSetting(
-                                "gambatte_gbc_color_correction",
-                                R.string.setting_gambatte_gbc_color_correction,
+                                "mgba_frameskip",
+                                R.string.setting_mgba_frameskip,
                                 arrayListOf(
                                     ExposedSetting.Value(
                                         "disabled",
-                                        R.string.value_gambatte_gbc_color_correction_disabled
+                                        R.string.value_mgba_frameskip_disabled
                                     ),
-                                    ExposedSetting.Value(
-                                        "always",
-                                        R.string.value_gambatte_gbc_color_correction_always
-                                    )
+                                    ExposedSetting.Value("auto", R.string.value_mgba_fr>
                                 )
                             ),
                             ExposedSetting(
-                                "gambatte_dark_filter_level",
-                                R.string.setting_gambatte_dark_filter_level
-                            )
+                                "mgba_color_correction",
+                                R.string.setting_mgba_color_correction,
+                                arrayListOf(
+                                    ExposedSetting.Value(
+                                        "OFF",
+                                        R.string.value_mgba_color_correction_off
+                                    ),
+                                    ExposedSetting.Value(
+                                        "GBA",
+                                        R.string.value_mgba_color_correction_gba
+                                    )
+                                )
+                            ),
                         ),
                         rumbleSupported = true,
-                        defaultSettings = listOf(
-                            CoreVariable("gambatte_gbc_color_correction", "disabled"),
-                        ),
                         controllerConfigs = hashMapOf(
-                            0 to arrayListOf(ControllerConfigs.GB)
+                            0 to arrayListOf(ControllerConfigs.GBA)
                         )
                     ),
                 ),
