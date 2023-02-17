@@ -505,11 +505,11 @@ data class GameSystem(
                                     ),
                                     ExposedSetting.Value(
                                         "lcd_ghosting",
-                                        R.string.value_mgba_interframe_blending_lcd_gho>
+                                        R.string.value_mgba_interframe_blending_lcd_ghosting
                                     ),
                                     ExposedSetting.Value(
                                         "lcd_ghosting_fast",
-                                        R.string.value_mgba_interframe_blending_lcd_gho>
+                                        R.string.value_mgba_interframe_blending_lcd_ghosting_fast
                                     ),
                                 )
                             ),
@@ -521,7 +521,7 @@ data class GameSystem(
                                         "disabled",
                                         R.string.value_mgba_frameskip_disabled
                                     ),
-                                    ExposedSetting.Value("auto", R.string.value_mgba_fr>
+                                    ExposedSetting.Value("auto", R.string.value_mgba_frameskip_auto)
                                 )
                             ),
                             ExposedSetting(
