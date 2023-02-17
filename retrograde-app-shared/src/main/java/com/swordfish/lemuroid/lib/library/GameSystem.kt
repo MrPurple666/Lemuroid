@@ -615,7 +615,7 @@ data class GameSystem(
                     ),
                 ),
                 uniqueExtensions = listOf("gba"),
-                supportedExtensions = listOf("srl", "gbc"),
+                supportedExtensions = listOf("srl"),
             ),
             GameSystem(
                 SystemID.N64,
