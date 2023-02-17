@@ -715,7 +715,7 @@ data class GameSystem(
                 R.string.game_system_abbr_psx,
                 listOf(
                     SystemCoreConfig(
-                        CoreID.PCSX_REARMED,
+                        CoreID.SWANSTATION,
                         controllerConfigs = hashMapOf(
                             0 to arrayListOf(
                                 ControllerConfigs.PSX_STANDARD,

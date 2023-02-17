@@ -33,6 +33,7 @@ if (usePlayDynamicFeatures()) {
         ":lemuroid_core_mgba",
         ":lemuroid_core_mupen64plus_next_gles3",
         ":lemuroid_core_pcsx_rearmed",
+        ":lemuroid_core_swanstation",
         ":lemuroid_core_ppsspp",
         ":lemuroid_core_prosystem",
         ":lemuroid_core_snes9x",
@@ -50,6 +51,7 @@ if (usePlayDynamicFeatures()) {
     project(":lemuroid_core_mgba").projectDir = File("lemuroid-cores/lemuroid_core_mgba")
     project(":lemuroid_core_mupen64plus_next_gles3").projectDir = File("lemuroid-cores/lemuroid_core_mupen64plus_next_gles3")
     project(":lemuroid_core_pcsx_rearmed").projectDir = File("lemuroid-cores/lemuroid_core_pcsx_rearmed")
+    project(":lemuroid_core_swanstation").projectDir = File("lemuroid-cores/lemuroid_core_swanstation")
     project(":lemuroid_core_ppsspp").projectDir = File("lemuroid-cores/lemuroid_core_ppsspp")
     project(":lemuroid_core_snes9x").projectDir = File("lemuroid-cores/lemuroid_core_snes9x")
     project(":lemuroid_core_stella").projectDir = File("lemuroid-cores/lemuroid_core_stella")
