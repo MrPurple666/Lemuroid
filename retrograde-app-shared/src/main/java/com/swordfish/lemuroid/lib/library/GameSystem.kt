@@ -733,6 +733,7 @@ data class GameSystem(
                                 ControllerConfigs.PSX_STANDARD,
                                 ControllerConfigs.PSX_DUALSHOCK
                             ),
+                          ),
                         defaultSettings = listOf(
                             CoreVariable("duckstation_CDROM.LoadImagePatches", "false"),
                             CoreVariable("duckstation_CDROM.LoadImageToRAM", "falae"),
