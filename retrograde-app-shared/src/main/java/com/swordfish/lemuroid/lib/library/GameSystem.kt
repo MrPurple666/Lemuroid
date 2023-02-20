@@ -736,7 +736,7 @@ data class GameSystem(
                           ),
                         defaultSettings = listOf(
                             CoreVariable("duckstation_CDROM.LoadImagePatches", "false"),
-                            CoreVariable("duckstation_CDROM.LoadImageToRAM", "falae"),
+                            CoreVariable("duckstation_CDROM.LoadImageToRAM", "false"),
                             CoreVariable("duckstation_CDROM.RegionCheck", "false"),
                             CoreVariable("duckstation_Console.Region", "auto"),
                             CoreVariable("duckstation_Display.ActiveEndOffset", "0"),
